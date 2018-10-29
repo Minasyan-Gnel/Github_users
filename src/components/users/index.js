@@ -1,8 +1,9 @@
 const Users = () => {
+    const rootPage = document.getElementById("root-page");
     const html = `<div id="users-wrapper">
         User wrapper
     </div>`;
-    return html;
+    rootPage.innerHTML = html;
 }
 
 export default Users;

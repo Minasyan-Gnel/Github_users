@@ -1,12 +1,12 @@
 import Navbar from "../../components/navBar";
-import Users from "../../components/users";
+import RootPage from "../rootPage";
 
 const Layout = () => {
     const navbar = Navbar();
-    const users = Users();
-    const html = `<div id="contain-wrapper">
+    const rootPage = RootPage();
+    const html = `<div id="layout">
         ${navbar}
-        ${users}
+        ${rootPage}
     </div>`;
     return html;
 }

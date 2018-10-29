@@ -1,4 +1,5 @@
 import Helpers from "../../helpers";
+import Router from "../../router";
 
 export const setNavBarButtons = () => {
     const navbar = document.getElementById("nav-bar");
@@ -6,14 +7,14 @@ export const setNavBarButtons = () => {
         type: "BUTTON",
         text: "Users",
         callbackClick: () => {
-            console.error("users")
+            Router.navigatePage("/users");
         }
     });
     const reposBtn = Helpers.createNodeElement({
         type: "BUTTON",
         text: "Repos",
         callbackClick: () => {
-            console.error("repos")
+            Router.navigatePage("/repos");
         }
     });
     navbar.appendChild(usersBtn);
