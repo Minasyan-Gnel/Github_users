@@ -1,7 +1,7 @@
 # github_users
 Find users in github
 
-# github-repos setup
+# github-users setup
 ## Install all dependencies
 ```bash
 npm install
