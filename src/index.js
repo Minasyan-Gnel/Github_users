@@ -1,5 +1,5 @@
-import "./style.css";
+import { Bootstrap } from "./bootstrap";
 
-function foo () {
-    console.error('++++++++')
+window.onload = () => {
+    Bootstrap();
 }
