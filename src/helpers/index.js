@@ -1,12 +1,18 @@
 const Helpers = (() => {
     return {
-        createNodeElement: ({tagName, type, text, classes, id, callbackClick, callbackEnter, placeholder}) => {
+        createNodeElement: ({tagName, type, text, classes, id, callbackClick, callbackEnter, placeholder, src, alt}) => {
             const element = document.createElement(tagName);
             if (id) {
                 element.id = id;
             }
             if (type) {
                 element.type = type;
+            }
+            if (src) {
+                element.src = src;
+            }
+            if (alt) {
+                element.alt = alt
             }
             if (text) {
                 element.innerText = text;

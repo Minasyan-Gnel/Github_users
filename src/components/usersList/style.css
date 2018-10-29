@@ -1,0 +1,19 @@
+#users-list{
+    text-align: center;
+}
+.user{
+    display: inline-block;
+    width: 9rem;
+    height: auto;
+    margin: 10px;
+}
+.user > img {
+    width: 100%;
+    border-radius: 50%;
+}
+.user > h4 {
+    text-transform: uppercase;
+}
+.user > p {
+    font-weight: bold;
+}

@@ -5,7 +5,7 @@ class StoreUsers {
     addListener (type, callback) {
         this.listeners.push({type, callback});
     }
-    setData (data) {
+    setData (data, type) {
         this.listeners
         .filter(listener => listener.type === type)
         .forEach(listener => listener.callback(data))

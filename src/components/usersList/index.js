@@ -1,5 +1,7 @@
+import "./style.css";
+
 const UsersList = () => {
-    const html = `<div id="users-list">Users contain wrapper</div>`;
+    const html = `<div id="users-list"></div>`;
     return html;
 }
 

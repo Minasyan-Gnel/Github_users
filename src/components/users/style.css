@@ -10,3 +10,25 @@
 #search-input::placeholder{
     color: silver;
 }
+.paging-btn-wrapper{
+    display: inline-block;
+    float: right;
+    margin: 5px 10px;
+}
+.paging-btn-wrapper > button {
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(173, 101, 6);
+    color: #FFFFFF;
+    padding: 7px 13px;
+    font-size: 1vw;
+    font-weight: bold;
+}
+.paging-btn-wrapper > button:first-child{
+    margin: 0 20px 0 0;
+}
+.paging-btn-wrapper > button:hover {
+    box-shadow: inset 0 0 15px #000000;
+}

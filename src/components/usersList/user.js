@@ -1,8 +1,37 @@
 import Store from "../../stores";
+import Helpers from "../../helpers";
 
-const setUser = () => {
-    const usersList = document.getElementById("users-list");
+/**
+ * @name setUser
+ * @description set user in users list
+ * @return {undefined}
+ */
+export const setUser = () => {
     Store.addListener("usersList", (data) => {
-        console.error("++++++++++++++++++++++")
+        const usersList = document.getElementById("users-list");
+        usersList.innerHTML = "";
+        data.items.forEach(item => {
+            const elementUser = Helpers.createNodeElement({
+                tagName: "DIV",
+                classes: ["user"]
+            });
+            const userImage = Helpers.createNodeElement({
+                tagName: "IMG",
+                src: item.avatar_url,
+                alt: "User picture"
+            });
+            const userName = Helpers.createNodeElement({
+                tagName: "H4",
+                text: item.login
+            });
+            const userId = Helpers.createNodeElement({
+                tagName: "P",
+                text: `user-id: ${item.id}`
+            });
+            elementUser.appendChild(userImage);
+            elementUser.appendChild(userName);
+            elementUser.appendChild(userId);
+            usersList.appendChild(elementUser);
+        });
     });
 }

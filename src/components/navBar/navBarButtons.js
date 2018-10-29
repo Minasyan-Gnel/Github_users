@@ -1,6 +1,11 @@
 import Helpers from "../../helpers";
 import Router from "../../router";
 
+/**
+ * @name setNavBarButtons
+ * @description set buttons in the navigation bar
+ * @return {undefined}
+ */
 export const setNavBarButtons = () => {
     const navbar = document.getElementById("nav-bar");
     const usersBtn = Helpers.createNodeElement({
