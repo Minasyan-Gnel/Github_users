@@ -28,16 +28,22 @@ export const setSearchBarItemes = () => {
         tagName: "BUTTON",
         text: "Next",
         classes: ["next-btn"],
+        id: "next-btn",
+        disabled: true,
         callbackClick: () => {
             fetchUsers(null, ++currentPage)
+            document.getElementById("prev-btn").disabled = false;
         }
     });
     const backBtn = Helpers.createNodeElement({
         tagName: "BUTTON",
         text: "Back",
         classes: ["prev-btn"],
+        id: "prev-btn",
+        disabled: true,
         callbackClick: () => {
-            currentPage > 1 && fetchUsers(null, --currentPage);
+            fetchUsers(null, --currentPage);
+            currentPage === 1 && (document.getElementById("prev-btn").disabled = true);
         }
     });
     pagingBtnWrapper.appendChild(backBtn);

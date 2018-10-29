@@ -32,3 +32,8 @@
 .paging-btn-wrapper > button:hover {
     box-shadow: inset 0 0 15px #000000;
 }
+.paging-btn-wrapper > button:disabled{
+    background-color: silver;
+    color: rgb(92, 91, 91);
+    cursor: not-allowed;
+}

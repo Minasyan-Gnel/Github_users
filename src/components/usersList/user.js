@@ -9,6 +9,9 @@ import Helpers from "../../helpers";
 export const setUser = () => {
     Store.addListener("usersList", (data) => {
         const usersList = document.getElementById("users-list");
+        const nextBtn = document.getElementById("next-btn");
+        nextBtn.disabled = false;
+        console.error(nextBtn.disabled)
         usersList.innerHTML = "";
         data.items.forEach(item => {
             const elementUser = Helpers.createNodeElement({
