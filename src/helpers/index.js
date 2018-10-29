@@ -14,6 +14,7 @@ const Helpers = (() => {
             if (callbackClick) {
                 element.addEventListener("click", callbackClick);
             }
+            return element;
         }
     }
 })()
