@@ -7,19 +7,3 @@ body{
     background-color: rgb(92, 91, 91);
     color: #FFFFFF
 }
-#nav-bar{
-    text-align: center;
-}
-#nav-bar > button {
-    outline: none;
-    border: none;
-    background-color: rgb(173, 101, 6);
-    padding: 10px 22.7%;
-    color: #FFFFFF;
-    font-size: 1.5vw;
-    font-weight: bold;
-    cursor: pointer;
-}
-#nav-bar > button:hover{
-    box-shadow: inset 0 0 15px #000000
-}

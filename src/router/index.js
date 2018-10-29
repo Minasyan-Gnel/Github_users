@@ -12,7 +12,7 @@ class Router {
         if (state) {
             const { path } = state;
             this.navigatePage(path);
-            return
+            return;
         }
         this.navigatePage("/users");
     }
